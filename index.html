@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOMOHUB</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+  <div id="gate">
+    <div class="gate-box">
+      <h1>Momo <span>hub</span></h1>
+      <p style="color:#ffa500;">This is a taste heaven</p>
+
+      <button class="gate-btn">Notice to unsatisfied eaters</button>
+
+      <div class="notice">
+        This food stall contains explicit and naughty momo.
+        By entering you agree that your legs deserve to rest on the seat
+        while your tongue slowly licks the chutney off momos.
+        <br><br>
+        <span style="color:#ffa500;">Notice to all other stalls</span>
+      </div>
+
+      <div class="gate-btns">
+        <button class="gate-btn" onclick="enterSite()">I am ready to finally recieve a full pleasure package-Enter</button>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MAIN SITE ================= -->
+  <header>
+    <img src="logo1.jpeg">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#Journey">Journey</a>
+  
+      <a href="#games">Momo Games</a>
+  
+      <a href="#About">About</a>
+   
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero" id="home">
+    <div class="hero-container">
+
+      <div class="hero-text">
+        <h1>Where Every Bite Feels Legendary</h1>
+        <p>
+          Freshly steamed, perfectly spiced, and served hot.
+          Experience momos like never before.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#menu" class="hero-btn primary">Explore Menu</a>
+          <a href="#Journey" class="hero-btn secondary">View Journey</a>
+        </div>
+      </div>
+
+      <div class="hero-video">
+        <video autoplay muted loop playsinline>
+          <source src="video4.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+  </div>
+  <div class="sale-counter" data-target="16000">
+    ₹<span id="saleValue">0</span>+
+    <span id="finalText" >Sales in Mridang 2025</span>
+  </div>
+  <section id="menu">
+    <!-- ================= SALES COUNTER ================= -->
+
+
+    <h2>Menu</h2>
+
+
+    <!-- ================= MOMOS ================= -->
+    <h3 style="color:#ffa500;margin-bottom:15px;">🥟 Momos</h3>
+    <div class="menu" style="grid-template-columns:1fr;">
+
+      <div class="menu-item">
+        <img src="afghani2.png">
+        <div>
+          <h4>Afghani Momos</h4>
+          <p>Rich, creamy momos infused with authentic Afghani spices. Mild, smooth and indulgent.</p>
+          <span>₹69</span>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="momo2.png">
+        <div>
+          <h4>Kurkure Momos</h4>
+          <p>Golden fried momos with an extra crunchy outer layer and juicy filling.</p>
+          <span>₹79</span>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="shezwan.png">
+        <div>
+          <h4>Schezwan Momos</h4>
+          <p>Spicy schezwan-coated momos tossed in bold Indo-Chinese flavors.</p>
+          <span>₹69</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ================= CHINESE ================= -->
+    <h3 style="color:#ffa500;margin:40px 0 15px;">🥢 Chinese</h3>
+    <div class="menu" style="grid-template-columns:1fr;">
+
+      <div class="menu-item">
+        <img src="kurkurespringroll.jpeg">
+        <div>
+          <h4>Kurkure Spring Roll</h4>
+          <p>Crispy golden spring rolls packed with spicy vegetable filling.</p>
+          <span>₹59</span>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="creamyspringroll.jpeg">
+        <div>
+          <h4>Creamy Spring Roll</h4>
+          <p>Soft rolls filled with creamy, cheesy goodness and mild spices.</p>
+          <span>₹79</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ================= FRIES ================= -->
+    <h3 style="color:#ffa500;margin:40px 0 15px;"> 🍝 Pasta</h3>
+    <div class="menu" style="grid-template-columns:1fr;">
+
+      <div class="menu-item">
+        <img src="pasta.jpeg">
+        <div>
+          <h4>Alfredo Pasta</h4>
+          <p>Alfredo is a creamy white-sauce pasta known for its rich, smooth texture and cheesy flavor 🍝. Made with butter, cream, and cheese, it’s a comforting and mildly flavored dish that feels indulgent in every bite.
+</p>
+          <span>₹99</span>
+        </div>
+      </div>
+
+      
+
+    </div>
+
+    <!-- ================= CHAI ================= -->
+    <h3 style="color:#ffa500;margin:40px 0 15px;">☕ Chai</h3>
+    <div class="menu" style="grid-template-columns:1fr;">
+           <div class="menu-item">
+        <img src="kadak.jpeg">
+        <div>
+          <h4>Kadak Chai</h4>
+          <p>Kadak chai is a strong, bold Indian tea brewed with extra tea leaves and spices, delivering an intense flavor and energizing kick in every sip. ☕</p>
+          <span>₹19</span>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="rose.jpeg">
+        <div>
+          <h4>Rose Chai</h4>
+          <p>Rose chai is a fragrant, floral-infused tea blending delicate rose essence with smooth, soothing warmth in every sip. ☕</p>
+          <span>₹29</span>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="kesar.jpeg">
+        <div>
+          <h4>Kesar Chai</h4>
+          <p>Kesar chai is a rich, aromatic tea infused with saffron strands, offering a royal taste and comforting warmth.</p>
+          <span>₹29</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+    <!-- ================= SPECIAL ================= -->
+    <section id="special" class="special-section">
+    <div class="special-card">
+
+      <!-- LEFT -->
+      <div class="special-text">
+        <span class="special-badge">Chef’s Special</span>
+        <h2>🍫 Choco Lava Cake</h2>
+
+        <p>
+          A warm, soft chocolate cake with a rich molten lava
+          center that melts the moment your spoon touches it.
+          Crafted to perfection for true chocolate lovers.
+        </p>
+
+        <p>
+          Served hot. Gooey inside. Pure indulgence.
+          The perfect sweet ending to your MOMOHUB experience.
+        </p>
+
+        <div class="special-price">₹99</div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="special-video">
+        <video autoplay muted loop playsinline>
+          <source src="video6.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+  </section>
+  <section id="Journey">
+    <h2>Journey</h2>
+
+
+
+
+
+  <!-- JOURNEY CARDS -->
+  <div class="journey-cards">
+    <div class="journey-card">
+      <span>🎯 Beginning</span>
+      <h3>The Ad War</h3>
+      <p>
+        A college ad war sparked the idea of MOMOHUB.
+        We decided to stand out and bring something unforgettable.
+      </p>
+    </div>
+
+    <div class="journey-card">
+      <span>🥟 Experiment</span>
+      <h3>Hostel Kitchen</h3>
+      <p>
+        From searching raw materials to cooking in hostel rooms,
+        every momo was tested until perfection.
+      </p>
+    </div>
+
+    <div class="journey-card">
+      <span>🚀 Breakthrough</span>
+      <h3>Sold Out</h3>
+      <p>
+        The response was overwhelming. Stock vanished in minutes,
+        and the stall shut multiple times due to crowd.
+      </p>
+    </div>
+
+    <div class="journey-card">
+      <span>🍽️ Expansion</span>
+      <h3>What’s Next</h3>
+      <p>
+        Now we return stronger — with an expanded menu,
+        better taste, and bigger MOMOHUB dreams.
+      </p>
+    </div>
+  </div>
+  <!-- JOURNEY MEDIA : 4 PHOTOS -->
+  <div class="journey-slider">
+
+  <button class="slider-btn prev">&#10094;</button>
+
+  <div class="slider-track">
+    <img src="journey5.jpeg" class="slide active">
+    <img src="journey7.jpeg" class="slide">
+    <img src="journey8.jpeg" class="slide">
+    <img src="journey9.jpeg" class="slide">
+  </div>
+
+  <button class="slider-btn next">&#10095;</button>
+
+</div>
+
+    <section id="games">
+    <h2>Flappy Momo 🥟</h2>
+    <canvas id="game" width="400" height="600"></canvas>
+    <p style="text-align:center;color:#ccc;margin-top:10px;">
+      Click or press <strong>SPACE</strong> to play
+    </p>
+  </section>
+  <section id="about">
+    <h2>About Us</h2>
+  <h3 class="founders-title">FOUNDING MEMBERS</h3>
+
+    <!-- MEMBER 1 -->
+    <div class="about-row">
+      <div class="about-image">
+        <img src="poster1.png" alt="Team member 1">
+      </div>
+      <div class="about-text">
+        <h3>Kartik Gulati</h3>
+        <p>
+          👨‍🍳 Chef Kartik Gulati from Saharanpur – cooking since childhood with pure passion.
+ </p><p>
+            🍽️ Loves experimenting with flavors and turning ideas into tasty creations</p>
+          <p>🎬 Skilled in video editing – making visuals as good as the food</p> 
+           <p>
+       💻 Also into website making – mixing creativity with tech
+        </p>
+      </div>
+    </div>
+
+    <!-- MEMBER 2 -->
+    <div class="about-row reverse">
+      <div class="about-image">
+        <img src="poster2.png" alt="Team member 2">
+      </div>
+      <div class="about-text">
+        <h3>Harsh Pathak(Tillu)</h3>
+    <p>👨‍🍳CHEF HARSH PATHAK(TILLU) from South Delhi</p>
+<p>😋BRINGS TASTE OF DELHI IN IIIT UNA</p>
+<p>❤️LOVES WORKING ON NEW IDEAS</p>
+<p>👨‍💼 ALREADY WORKED ON IIIT UNA MERCH ,MOMO HUB IN MRIDANG</p>
+
+      </div>
+    </div>
+
+    <!-- MEMBER 3 -->
+    <div class="about-row">
+      <div class="about-image">
+        <img src="poster3.png" alt="Team member 3">
+      </div>
+      <div class="about-text">
+        <h3>Harsh Vashisht</h3>
+ <p>🥘 Loves to try new recipes</p>
+<p>🖼️ Proficient in photo editing</p>
+<p>🏪loves to manage difficult task and already worked in IIIt una merch</p>
+<p>👾 Learner of Web design</p>
+      </div>
+    </div>
+
+    <!-- MEMBER 4 -->
+    <div class="about-row reverse">
+      <div class="about-image">
+        <img src="poster4.png" alt="Team member 4">
+      </div>
+      <div class="about-text">
+        <h3>Harshul Singh Tomar</h3>
+             <p>
+         🚀 Chief Coordinator at Momohub — leading operations & execution
+        </p>
+        <p>
+         📊 Managing Stock Crowd and community activities
+        </p>
+        <p>
+         🤝 Focused on coordination, teamwork, and impact
+        </p>
+        <p>
+         🎧 Music Producer with a love for synth experiments
+        </p>
+        
+      </div>
+    </div>
+    <div class="about-group">
+      <h3 class="founders-title">OTHER IMPORTANT MEMBERS OF TEAM</h3>
+
+    <p class="about-group-text">
+      Ambuj, Ashish, Animesh, and Akshat were the real pillars behind the stall’s smooth operation 🙌. They managed everything from arranging and bringing all the required products on time 📦 to playing a key role at the counter, handling payments and managing the crowd efficiently 💵. Their coordination and presence helped maintain order even during rush hours 🔥. Alongside that, they constantly supported the chefs 👨‍🍳, making the entire workflow faster, easier, and stress-free
+    </p>
+
+    <div class="about-group-image">
+      <img src="group2.jpeg" alt="MOMOHUB Team">
+    </div>
+  </div>
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+  <footer>
+    Created and Designed  by Kartik Gulati  
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
