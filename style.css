@@ -193,7 +193,7 @@ header{
 
   /* ================= SECTIONS ================= */
   section{
-   padding: clamp(80px, 10vw, 120px) clamp(16px, 5vw, 40px) 60px;
+  padding: clamp(60px, 8vw, 100px) 16px 50px;
     min-height:auto;
   }
 
@@ -221,7 +221,7 @@ header{
   }
   .journey-cards{
     max-width:1200px;
-    margin:60px auto 0;
+    margin:30px auto 0;
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:25px;
@@ -826,8 +826,35 @@ nav a{
   }
 
 }
+#Journey{
+  padding-top:40px;
+}
 @media(max-width:900px){
   header img{
     height:28px;   /* adjust 24–32px if needed */
+  }
+}
+@media(max-width:900px){
+
+  .menu{
+    grid-template-columns:1fr !important;
+  }
+
+  .menu-item{
+    width:100%;
+  }
+
+}
+@media(max-width:900px){
+  header{
+    padding:10px 12px;
+  }
+}
+@media(max-width:900px){
+  .hero-container,
+  .journey-cards,
+  .special-card,
+  .about-group{
+    max-width:100%;
   }
 }
