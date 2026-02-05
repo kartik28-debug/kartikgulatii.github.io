@@ -826,3 +826,8 @@ nav a{
   }
 
 }
+@media(max-width:900px){
+  header img{
+    height:28px;   /* adjust 24–32px if needed */
+  }
+}
