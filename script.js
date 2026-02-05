@@ -258,6 +258,36 @@ startAutoSlide();
         jumpSound.play();
       }
     });
+    /* MOBILE TAP CONTROL */
+canvas.addEventListener("touchstart", function(e){
+  e.preventDefault();   // stop page scroll
+
+  if (!started) started = true;
+
+  if (gameOver) {
+    resetGame();
+    return;
+  }
+
+  momo.vel = -9;
+  jumpSound.currentTime = 0;
+  jumpSound.play();
+});
+
+/* MOUSE CLICK CONTROL */
+canvas.addEventListener("mousedown", function(){
+
+  if (!started) started = true;
+
+  if (gameOver) {
+    resetGame();
+    return;
+  }
+
+  momo.vel = -9;
+  jumpSound.currentTime = 0;
+  jumpSound.play();
+});
 
     /* INIT */
     resetGame();
