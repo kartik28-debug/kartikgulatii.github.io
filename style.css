@@ -759,7 +759,7 @@ header{
 
 
 .hero-video video,
-.special-video video,        
+.special-video video,
 .journey-photo img,
 .about-image img{
   width:100%;
@@ -771,7 +771,6 @@ html, body{
   overflow-x:hidden;
 }
 nav{
-  
   display:flex;
   flex-wrap:wrap;
   gap: clamp(8px, 2vw, 20px);
@@ -793,6 +792,37 @@ nav a{
 .hero-btn, .gate-btn{
   min-height:44px;
 }
+@media(max-width:900px){
 
+  .hero-container{
+    grid-template-columns:1fr;   /* stack items */
+  }
 
+  .hero-text{
+    order:1;   /* text first */
+  }
 
+  .hero-video{
+    order:2;   /* video below text */
+    margin-top:20px;
+  }
+
+}
+@media(max-width:900px){
+
+  nav{
+    flex-wrap:nowrap;        /* stop wrapping */
+    overflow-x:auto;         /* allow horizontal scroll */
+    scrollbar-width:none;    /* hide scrollbar (Firefox) */
+  }
+
+  nav::-webkit-scrollbar{
+    display:none;            /* hide scrollbar (Chrome) */
+  }
+
+  nav a{
+    white-space:nowrap;      /* keep text in one line */
+    flex:0 0 auto;           /* prevent shrinking */
+  }
+
+}
